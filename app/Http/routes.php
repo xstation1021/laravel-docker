@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/users', 'UserController@showUsers')->name('showUsers');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
